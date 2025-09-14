@@ -12,6 +12,7 @@ This repository contains two parts:
 3. Replace placeholder images in `images/` with your own assets.
 
 ## Structure
+```
 html-css-comprehensive-assignment/
 ├── README.md
 ├── question1-innovatetech/
@@ -34,6 +35,7 @@ html-css-comprehensive-assignment/
     ├── question1-mobile.png
     ├── question2-desktop.png
     └── question2-mobile.png
+```
 
 ## Submission
 Create a GitHub repo named `html-css-comprehensive-assignment` and push the folder above. Provide the repository URL as your submission:
