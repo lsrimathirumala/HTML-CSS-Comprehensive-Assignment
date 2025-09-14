@@ -36,6 +36,3 @@ html-css-comprehensive-assignment/
     ├── question2-desktop.png
     └── question2-mobile.png
 ```
-
-## Submission
-Create a GitHub repo named `html-css-comprehensive-assignment` and push the folder above. Provide the repository URL as your submission:
