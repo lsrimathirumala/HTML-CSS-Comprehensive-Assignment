@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Contact InnovateTech Solutions" />
+  <link rel="icon" href="images/favicon.ico" />
+  <title>Contact — InnovateTech Solutions</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-layout">
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="InnovateTech Solutions logo" class="logo" />
+        <span class="company-name">InnovateTech Solutions</span>
+      </div>
+
+      <input id="nav-toggle-3" type="checkbox" aria-label="Toggle navigation"/>
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn btn-primary">Get Quote</a>
+      </div>
+
+      <label for="nav-toggle-3" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="contact-info container" aria-labelledby="contact-title">
+      <h1 id="contact-title">Contact Us</h1>
+
+      <address>
+        <strong>Office</strong><br/>
+        123 Innovation Drive, Suite 400<br/>
+        Tech City, TC 54321<br/>
+        <a href="tel:+1234567890">+1 (234) 567-890</a><br/>
+        <a href="mailto:hello@innovatetech.com">hello@innovatetech.com</a>
+      </address>
+
+      <table class="office-hours" aria-label="Office hours">
+        <caption>Office Hours</caption>
+        <thead>
+          <tr><th>Day</th><th>Open</th><th>Close</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Mon - Fri</td><td>9:00 AM</td><td>6:00 PM</td></tr>
+          <tr><td>Saturday</td><td>10:00 AM</td><td>3:00 PM</td></tr>
+          <tr><td>Sunday</td><td colspan="2">Closed</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="contact-form container" aria-labelledby="form-title">
+      <h2 id="form-title">Request a Quote</h2>
+
+      <form action="#" method="post" enctype="multipart/form-data" novalidate>
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="name">Full Name <span aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" required placeholder="Jane Doe" />
+
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" pattern="[0-9+()\-\s]{7,20}" placeholder="+1 (555) 555-5555" />
+
+          <label for="company">Company / Organization</label>
+          <input id="company" name="company" type="text" placeholder="Acme Inc." />
+        </fieldset>
+
+        <!-- Inquiry Details -->
+        <fieldset>
+          <legend>Inquiry Details</legend>
+
+          <label for="service">Service Interest</label>
+          <select id="service" name="service">
+            <option>Web Development</option>
+            <option>Mobile Apps</option>
+            <option>Consulting</option>
+            <option>Other</option>
+          </select>
+
+          <p>Project Timeline</p>
+          <label><input type="radio" name="timeline" value="asap" checked /> ASAP</label>
+          <label><input type="radio" name="timeline" value="1-3" /> 1-3 months</label>
+          <label><input type="radio" name="timeline" value="3-6" /> 3-6 months</label>
+          <label><input type="radio" name="timeline" value="6+" /> 6+ months</label>
+
+          <label for="budget">Budget Range</label>
+          <div class="range-wrap">
+            <input id="budget" name="budget" type="range" min="1000" max="100000" step="500" value="15000" />
+            <output for="budget">15000</output>
+          </div>
+
+          <p>Project Type</p>
+          <label><input type="checkbox" name="ptype" value="new" /> New Website</label>
+          <label><input type="checkbox" name="ptype" value="redesign" /> Redesign</label>
+          <label><input type="checkbox" name="ptype" value="mobile" /> Mobile App</label>
+          <label><input type="checkbox" name="ptype" value="ecommerce" /> E-commerce</label>
+        </fieldset>
+
+        <!-- Message -->
+        <fieldset>
+          <legend>Message</legend>
+
+          <label for="description">Project Description <span aria-hidden="true">*</span></label>
+          <textarea id="description" name="description" rows="4" required placeholder="Describe your project..."></textarea>
+
+          <label for="requirements">Upload Requirements (documents only)</label>
+          <input id="requirements" name="requirements" type="file" accept=".pdf,.doc,.docx,.txt" />
+        </fieldset>
+
+        <!-- Contact preference + terms -->
+        <fieldset>
+          <legend>Preferences & Terms</legend>
+
+          <p>Preferred Contact Method</p>
+          <label><input type="radio" name="pref" value="email" checked /> Email</label>
+          <label><input type="radio" name="pref" value="phone" /> Phone</label>
+          <label><input type="radio" name="pref" value="video" /> Video Call</label>
+
+          <label class="checkbox">
+            <input type="checkbox" name="agree" required />
+            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>. <span aria-hidden="true">*</span>
+          </label>
+
+          <label class="checkbox small">
+            <input type="checkbox" name="subscribe" />
+            Subscribe to our newsletter
+          </label>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-ghost">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><p>© 2025 InnovateTech Solutions</p></div>
+      <div><a href="index.html">Home</a></div>
+    </div>
+  </footer>
+</body>
+</html>
